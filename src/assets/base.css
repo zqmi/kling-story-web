@@ -1,0 +1,83 @@
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --ws-app-bg: #080a0f;
+  --ws-app-bg-elevated: #0d1018;
+  --ws-aside-bg: #0e1118;
+  --ws-panel: rgba(15, 18, 26, 0.92);
+  --ws-panel-2: rgba(255, 255, 255, 0.03);
+  --ws-glass: rgba(18, 22, 32, 0.75);
+
+  --ws-border: rgba(255, 255, 255, 0.07);
+  --ws-border-strong: rgba(255, 255, 255, 0.12);
+  --ws-text: #f1f5f9;
+  --ws-muted: rgba(148, 163, 184, 0.95);
+  --ws-dim: rgba(100, 116, 139, 0.9);
+
+  /* Accents */
+  --ws-accent: #818cf8;
+  --ws-accent-2: #c084fc;
+  --ws-warn: #fbbf24;
+  --ws-ok: #34d399;
+  --ws-danger: #f87171;
+
+  --ws-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+  --ws-shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --ws-focus: 0 0 0 2px rgba(129, 140, 248, 0.45);
+
+  --ws-radius: 12px;
+  --ws-radius-sm: 8px;
+  --ws-font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.55;
+  font-family:
+    'Noto Sans SC',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--ws-app-bg);
+  color: var(--ws-text);
+}
+
+/* Page utilities shared by views */
+.ws-page {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.ws-surface {
+  border-radius: var(--ws-radius);
+  border: 1px solid var(--ws-border);
+  background: var(--ws-panel-2);
+}
+
+.ws-section-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ws-muted);
+  margin-bottom: 0.45rem;
+}
